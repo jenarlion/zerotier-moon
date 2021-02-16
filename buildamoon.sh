@@ -1,2 +1,2 @@
-#docker build -t zerotier-one-latest /home/stevo/docker-zerotier-containerized
+#Example docker build command
 docker build -t zerotier-moon /home/stevo/newmoon
