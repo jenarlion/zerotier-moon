@@ -1,8 +1,6 @@
 Generation script based off of seedgou/zerotier-moon
 Image uses a Debian-slim base and installs ZeroTier using their build script.
 
-docker run --name zerotier-moon -v YOURSTORAGENAME:/var/lib/zerotier-one --cap-add=NET_ADMIN --cap-add=SYS_ADMIN -d -p 9993:9993/udp zerotier-moon:latest -4 IPV4ADDRESSHERE
-
 # docker-zerotier-moon
 Create a container zerotier-moon in a single stage.
 
