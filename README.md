@@ -27,7 +27,7 @@ docker pull stevo11811/zerotier-moon
 ### Start a container
 
 ```
-docker run --name zerotier-moon -d -p 9993:9993/udp -v YourStorageHere:/var/lib/zerotier-one seedgou/zerotier-moon -4 1.2.3.4 -6 2001:abcd:abcd::1
+docker run --name zerotier-moon -d -p 9993:9993/udp -v YourStorageHere:/var/lib/zerotier-one stevo11811/zerotier-moon -4 1.2.3.4 -6 2001:abcd:abcd::1
 ```
 
 This image supports both IPv4 and IPv6
