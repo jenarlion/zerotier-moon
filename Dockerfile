@@ -10,7 +10,7 @@ RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 0x1657198823e
 RUN apt-get update && apt-get install -y zerotier-one=1.6.5
 RUN apt-get update && apt-get install -y procps
 FROM debian:buster-slim
-LABEL version="1.6.5"
+LABEL version="1.6.6"
 LABEL description="Containerized ZeroTier-Moon for use on CoreOS or other Docker-only Linux hosts."
 
 # ZeroTier relies on UDP port 9993
