@@ -12,10 +12,10 @@ if z=$(curl -s 'https://install.zerotier.com/' | gpg); then echo "$z" | bash; fi
 #RUN apt-key adv --keyserver ha.pool.sks-keyservers.net --recv-keys 0x1657198823e52a61  && \
 #    echo "deb http://download.zerotier.com/debian/buster buster main" > /etc/apt/sources.list.d/zerotier.list
 
-RUN apt-get update && apt-get install -y zerotier-one=1.8.9
+RUN apt-get update && apt-get install -y zerotier-one=1.10.1
 RUN apt-get update && apt-get install -y procps
 FROM debian:bullseye-slim
-LABEL version="1.8.9"
+LABEL version="1.10.1"
 LABEL description="Containerized ZeroTier-Moon for use on CoreOS or other Docker-only Linux hosts."
 
 # ZeroTier relies on UDP port 9993
