@@ -1,6 +1,6 @@
 ## NOTE: to retain configuration; mount a Docker volume, or use a bind-mount, on /var/lib/zerotier-one
 
-FROM debian:bullseye-slim as builder
+FROM debian:bookworm-slim as builder
 
 ## Supports x86_64, x86, arm, and arm64
 
@@ -14,7 +14,7 @@ if z=$(curl -s 'https://install.zerotier.com/' | gpg); then echo "$z" | bash; fi
 
 RUN apt-get update && apt-get install -y zerotier-one=1.12.2
 RUN apt-get update && apt-get install -y procps
-FROM debian:bullseye-slim
+FROM debian:bookworm-slim
 LABEL version="1.12.2"
 LABEL description="Containerized ZeroTier-Moon for use on CoreOS or other Docker-only Linux hosts."
 
