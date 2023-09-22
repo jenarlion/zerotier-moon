@@ -2,6 +2,7 @@ Generation script based off of seedgou/zerotier-moon
 Image uses a Debian-slim base and installs ZeroTier using their build script.
 
 Updated Aug 1, 2022 - 1.10.1
+Updated Sep 22, 2023 - 1.12.2
 
 # docker-zerotier-moon
 Create a container zerotier-moon in a single stage.
