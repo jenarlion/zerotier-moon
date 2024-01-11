@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  zerotier:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - zerotier-data:/var/lib/zerotier-one
+    ports:
+      - "9993:9993/udp"
+    entrypoint: ["/startup.sh"]
+    command: ["-4", "1.2.3.4", "-6", "2001:abcd:abcd::1", "-p", "9993"]
+
+volumes:
+  zerotier-data:
